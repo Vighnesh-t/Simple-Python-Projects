@@ -1,0 +1,33 @@
+a=int(input("enter range of student list :"))
+b=[]
+no=[]
+z=a
+name=[]
+std=[]
+e=0
+for a in range(0,a):
+    print("enter student name",a+1)
+    c=str(input())
+    b.append(c)
+print(b)
+print("-----------------------------")
+for d in range(0,len(b)):
+    print("enter mobile no for",b[d])
+    e=int(input())
+    no.append(e)
+print(no)
+print("-----------------------------")
+print("student with their no")
+for z in range(0,len(b)):
+    print(b[z],"-",no[z])
+print("-----------------------------")
+f=str(input("if you want to check the name in the list press Y\nelse press N for no : "))
+if(f=="y"):
+    g=str(input("enter student name to find : "))
+    if(g in b):
+        print( g,"found in list")
+    else:
+        print(g,"not found")
+else:
+    (f=="n")
+    print("you select not to enter any name")

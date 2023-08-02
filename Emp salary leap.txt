@@ -1,0 +1,81 @@
+name=str(input("enter employee name :"))
+emp_id=int(input("enter employee id:"))
+salary=int(input("enter employee salary:"))
+month=int(input("enter month no:"))
+year=int(input("enter year:"))
+leave=int(input("enter leave:"))
+month_sal=0
+print("---------------------------------")
+print("Employee name:",name,"/EMP id:",emp_id)
+y_sal=(salary*12)
+print("Monthly salary:",salary,"and CTC:",y_sal)
+print("---------------------------------")
+if(month==1):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: january /",year,": and salary :",month_sal)
+elif(month==3):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: march /",year,": and salary :",month_sal)
+elif(month==5):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: may /",year,": and salary :",month_sal)
+elif(month==7):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: july /",year,": and salary :",month_sal)
+elif(month==8):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: August /",year,": and salary :",month_sal)
+elif(month==10):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: october /",year,": and salary :",month_sal)
+elif(month==12):
+    day_sal=salary/31
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: December /",year,": and salary :",month_sal)
+elif(month==2):
+    if(month==2 and year%4==0):
+        day_sal=salary/29
+        lev_sal=leave*day_sal
+        month_sal=salary-lev_sal
+        print("date: february /",year,": and salary :",month_sal)
+    else:
+        day_sal=salary/28
+        lev_sal=leave*day_sal
+        month_sal=salary-lev_sal
+        print("Date: february /",year,": and salary :",month_sal)
+elif(month==4):
+    day_sal=salary/30
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: april /",year,": and salary :",month_sal)
+elif(month==6):
+    day_sal=salary/30
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: june /",year,": and salary :",month_sal)
+elif(month==9):
+    day_sal=salary/30
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: september /",year,": and salary :",month_sal)
+elif(month==11):
+    day_sal=salary/30
+    lev_sal=leave*day_sal
+    month_sal=salary-lev_sal
+    print("Date: november /",year,": and salary :",month_sal)
+    
+
+
